@@ -4,8 +4,8 @@
  * Module `pwm`
  * This module generates a PWM signal from the contents in the compare register.
  *
- * The duty cycle of the output waveform can be calculated as `{compare} * ((2^{DATA_WIDTH} - 1)`
- * The period of the output waveform can be calculated as `{CLK_PER_NS} * ({prescale}/2) * (2**{DATA_WIDTH})`
+ * The duty cycle of the output waveform can be calculated as `{compare} / ((2^{DATA_WIDTH} - 1)`
+ * The period of the output waveform can be calculated as `{CLK_PER_NS} * ({prescale}/2) * (2^{DATA_WIDTH})`
  *
  * Parameters:
  *      DATA_WIDTH: the width of the compare and prescale inputs

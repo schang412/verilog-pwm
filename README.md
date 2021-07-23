@@ -1,6 +1,6 @@
 # Verilog PWM
 
-[![Regression Tests](https://github.com/schang412/verilog-pwm/actions/workflows/regression-tests.yml/badge.svg)](https://github.com/schang412/verilog-pwm/actions/workflows/regression-tests.yml)
+[![Regression Tests](https://github.com/schang412/verilog-pwm/actions/workflows/regression-test.yml/badge.svg)](https://github.com/schang412/verilog-pwm/actions/workflows/regression-test.yml)
 
 GitHub repository: https://github.com/schang412/verilog-pwm
 
@@ -27,7 +27,7 @@ I use the window signal to sample the back EMF of a brushless motor only when po
 
 ### Calculations
 ```
-PWM_DUTY      = {compare} * (2^{DATA_WIDTH} - 1)
+PWM_DUTY      = {compare} / (2^{DATA_WIDTH} - 1)
 PWM_PERIOD    = {CLK_PERIOD_NS} * {prescale}/2 * 2^{DATA_WIDTH}
 PWM_PADDING_L = {CLK_PERIOD_NS} * {prescale}/2 * {PADDING}
 ```
